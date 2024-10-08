@@ -1,7 +1,8 @@
 # Merge sort algorithm
 # Based on Coursera Algorithms for searching, sorting and Indexing
 
-class CrossoverFinder:
+
+class CrossoverFinder(object):
     def __init__(self, x, y):
 
         self.x = x
@@ -31,7 +32,8 @@ class CrossoverFinder:
             return self._find_crossover_index_helper(left, mid)
 
 
-class TestCrossoverFinder:
+class TestCrossoverFinder(object):
+
     @staticmethod
     def run_tests():
         test_cases = [

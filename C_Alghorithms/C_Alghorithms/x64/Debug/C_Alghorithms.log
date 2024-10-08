@@ -1,0 +1,3 @@
+﻿  merge_sort.cpp
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\merge_sort.cpp(16,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  C_Alghorithms.vcxproj -> C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\x64\Debug\C_Alghorithms.exe
