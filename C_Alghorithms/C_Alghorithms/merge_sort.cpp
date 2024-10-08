@@ -5,7 +5,8 @@
 #include <algorithm>
 
 
-class CrossoverFinder {
+class CrossoverFinder 
+{
     public:
         CrossoverFinder(const std::vector<int>& x, const std::vector<int>& y)
             : x(x), y(y) {
@@ -17,10 +18,10 @@ class CrossoverFinder {
         }
 
     private:
+
         std::vector<int> x;
         std::vector<int> y;
 
-        // Validates the input
         void check_input(const std::vector<int>& x, const std::vector<int>& y) {
             if (x.size() != y.size()) {
                 std::cerr << "x and y must have the same length" << std::endl;
@@ -52,41 +53,42 @@ class CrossoverFinder {
 };
 
 
-class TestCrossoverFinder {
-public:
-    static void run_tests() {
+class TestCrossoverFinder 
+{
+    public:
 
-        std::vector<std::tuple<std::vector<int>, std::vector<int>, std::vector<int>>> test_cases = {
-            std::make_tuple(std::vector<int>{0, 1, 2, 3, 4, 5, 6, 7}, std::vector<int>{-2, 0, 4, 5, 6, 7, 8, 9}, std::vector<int>{1}),
-            std::make_tuple(std::vector<int>{0, 1, 2, 3, 4, 5, 6, 7}, std::vector<int>{-2, 0, 4, 4, 4, 4, 8, 9}, std::vector<int>{1, 5}),
-            std::make_tuple(std::vector<int>{0, 1}, std::vector<int>{-10, 10}, std::vector<int>{0}),
-            std::make_tuple(std::vector<int>{0, 1, 2, 3}, std::vector<int>{-10, -9, -8, 5}, std::vector<int>{2})
-        };
+        static void run_tests() {
 
-        for (size_t i = 0; i < test_cases.size(); ++i) {
+            std::vector<std::tuple<std::vector<int>, std::vector<int>, std::vector<int>>> test_cases = {
+                std::make_tuple(std::vector<int>{0, 1, 2, 3, 4, 5, 6, 7}, std::vector<int>{-2, 0, 4, 5, 6, 7, 8, 9}, std::vector<int>{1}),
+                std::make_tuple(std::vector<int>{0, 1, 2, 3, 4, 5, 6, 7}, std::vector<int>{-2, 0, 4, 4, 4, 4, 8, 9}, std::vector<int>{1, 5}),
+                std::make_tuple(std::vector<int>{0, 1}, std::vector<int>{-10, 10}, std::vector<int>{0}),
+                std::make_tuple(std::vector<int>{0, 1, 2, 3}, std::vector<int>{-10, -9, -8, 5}, std::vector<int>{2})
+            };
 
-            const std::vector<int>& x = std::get<0>(test_cases[i]);
-            const std::vector<int>& y = std::get<1>(test_cases[i]);
-            const std::vector<int>& expected = std::get<2>(test_cases[i]);
+            for (size_t i = 0; i < test_cases.size(); ++i) {
 
-            CrossoverFinder finder(x, y);
-            int result = finder.find_crossover_index();
+                const std::vector<int>& x = std::get<0>(test_cases[i]);
+                const std::vector<int>& y = std::get<1>(test_cases[i]);
+                const std::vector<int>& expected = std::get<2>(test_cases[i]);
 
-            // Check if result is in the list of expected results
-            if (std::find(expected.begin(), expected.end(), result) == expected.end()) {
-                std::cerr << "Test Case #" << i + 1 << " Failed: Expected one of {";
-                for (int val : expected) std::cerr << val << " ";
-                std::cerr << "} but got " << result << std::endl;
-                exit(EXIT_FAILURE);
+                CrossoverFinder finder(x, y);
+                int result = finder.find_crossover_index();
+
+                // Check if result is in the list of expected results
+                if (std::find(expected.begin(), expected.end(), result) == expected.end()) {
+                    std::cerr << "Test Case #" << i + 1 << " Failed: Expected one of {";
+                    for (int val : expected) std::cerr << val << " ";
+                    std::cerr << "} but got " << result << std::endl;
+                    exit(EXIT_FAILURE);
+                }
             }
-        }
 
-        std::cout << "All test cases passed." << std::endl;
-    }
-};
+            std::cout << "All test cases passed." << std::endl;
+        }
+    };
 
 int main() {
-    // Run all tests
     TestCrossoverFinder::run_tests();
     return 0;
 }
