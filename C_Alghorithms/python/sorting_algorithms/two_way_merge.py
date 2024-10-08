@@ -45,6 +45,7 @@ class TwoWayMerger(object):
 
 
 class TestMerger:
+
     @staticmethod
     def run_tests():
         merger = TwoWayMerger()
@@ -63,6 +64,4 @@ class TestMerger:
 
         print('All tests passed!')
 
-
-# Run the tests
 TestMerger.run_tests()
