@@ -113,8 +113,9 @@ class TestMinHeap:
         print(f'\tHeap = {h}')
         assert h.size() == 0
 
-        print('All tests passed!')
+        print('Heap Min: All tests passed!')
 
 
-TestMinHeap.run_tests()
+if __name__ == "__main__":
+    TestMinHeap.run_tests()
 

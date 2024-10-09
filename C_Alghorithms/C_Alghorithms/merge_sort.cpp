@@ -84,11 +84,7 @@ class TestCrossoverFinder
                 }
             }
 
-            std::cout << "All test cases passed." << std::endl;
+            std::cout << "Mege Sort: All test cases passed." << std::endl;
         }
     };
 
-int main() {
-    TestCrossoverFinder::run_tests();
-    return 0;
-}

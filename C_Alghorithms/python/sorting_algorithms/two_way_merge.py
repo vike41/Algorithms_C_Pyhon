@@ -62,6 +62,8 @@ class TestMerger:
         result = merger.k_way_merge([[-1, 1, 2, 3, 4, 5]])
         assert result == [-1, 1, 2, 3, 4, 5], "Test Case 3 Failed"
 
-        print('All tests passed!')
+        print('Two way merge: All tests passed!')
 
-TestMerger.run_tests()
+
+if __name__ == "__main__":
+    TestMerger.run_tests()

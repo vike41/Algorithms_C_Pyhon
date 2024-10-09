@@ -113,8 +113,9 @@ class TestMaxHeap:
         print(f'\tHeap = {h}')
         assert h.size() == 0
 
-        print('All tests passed!')
+        print('Heap Max: All tests passed!')
 
 
+if __name__ == "__main__":
+    TestMaxHeap.run_tests()
 
-TestMaxHeap.run_tests()

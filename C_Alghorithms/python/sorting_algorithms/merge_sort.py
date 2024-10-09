@@ -51,7 +51,8 @@ class TestCrossoverFinder(object):
             else:
                 assert result == expected, f"Test Case #{idx} Failed"
 
-        print('All test cases passed')
+        print('Merge Sort: All test cases passed')
 
 
-TestCrossoverFinder.run_tests()
+if __name__ == "__main__":
+    TestCrossoverFinder.run_tests()
