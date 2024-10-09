@@ -24,5 +24,14 @@
     <ClCompile Include="two_way_merge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="heap_top.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="heap_max.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="heap_min.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,13 @@
 ﻿  main.cpp
 C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\merge_sort.cpp(17,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  merge_sort.cpp
-C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\merge_sort.cpp(17,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  two_way_merge.cpp
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_max.cpp(15,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_max.cpp(27,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_min.cpp(12,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_min.cpp(24,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  heap_top.cpp
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_max.cpp(15,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_max.cpp(27,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_min.cpp(12,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\C_Alghorithms\heap_min.cpp(24,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   C_Alghorithms.vcxproj -> C:\Users\Keks\source\repos\C_Algorihms\C_Algorithms\C_Alghorithms\x64\Debug\C_Alghorithms.exe

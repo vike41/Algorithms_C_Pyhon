@@ -127,8 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="heap_max.cpp" />
+    <ClCompile Include="heap_min.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="merge_sort.cpp" />
+    <ClCompile Include="heap_top.cpp" />
     <ClCompile Include="two_way_merge.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

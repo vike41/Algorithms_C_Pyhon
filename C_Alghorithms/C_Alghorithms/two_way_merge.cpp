@@ -63,28 +63,28 @@ public:
 };
 
 class TestMerger {
-public:
-    static void run_tests() {
-        TwoWayMerger merger;
+    public:
+        static void run_tests() {
+            TwoWayMerger merger;
 
-        // Test case 1
-        std::vector<std::vector<int>> test_case1 = { {1, 2, 3}, {4, 5, 7}, {-2, 0, 6}, {5} };
-        std::vector<int> result = merger.k_way_merge(test_case1);
-        std::vector<int> expected1 = { -2, 0, 1, 2, 3, 4, 5, 5, 6, 7 };
-        assert(result == expected1 && "Test Case 1 Failed");
+            // Test case 1
+            std::vector<std::vector<int>> test_case1 = { {1, 2, 3}, {4, 5, 7}, {-2, 0, 6}, {5} };
+            std::vector<int> result = merger.k_way_merge(test_case1);
+            std::vector<int> expected1 = { -2, 0, 1, 2, 3, 4, 5, 5, 6, 7 };
+            assert(result == expected1 && "Test Case 1 Failed");
 
-        // Test case 2
-        std::vector<std::vector<int>> test_case2 = { {-2, 4, 5, 8}, {0, 1, 2}, {-1, 3, 6, 7} };
-        result = merger.k_way_merge(test_case2);
-        std::vector<int> expected2 = { -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8 };
-        assert(result == expected2 && "Test Case 2 Failed");
+            // Test case 2
+            std::vector<std::vector<int>> test_case2 = { {-2, 4, 5, 8}, {0, 1, 2}, {-1, 3, 6, 7} };
+            result = merger.k_way_merge(test_case2);
+            std::vector<int> expected2 = { -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8 };
+            assert(result == expected2 && "Test Case 2 Failed");
 
-        // Test case 3
-        std::vector<std::vector<int>> test_case3 = { {-1, 1, 2, 3, 4, 5} };
-        result = merger.k_way_merge(test_case3);
-        std::vector<int> expected3 = { -1, 1, 2, 3, 4, 5 };
-        assert(result == expected3 && "Test Case 3 Failed");
+            // Test case 3
+            std::vector<std::vector<int>> test_case3 = { {-1, 1, 2, 3, 4, 5} };
+            result = merger.k_way_merge(test_case3);
+            std::vector<int> expected3 = { -1, 1, 2, 3, 4, 5 };
+            assert(result == expected3 && "Test Case 3 Failed");
 
-        std::cout << "Two Way Merge Sort: All tests passed!\n";
-    }
-};
+            std::cout << "Two Way Merge Sort: All tests passed!\n";
+        }
+    };

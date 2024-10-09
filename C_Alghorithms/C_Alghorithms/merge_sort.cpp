@@ -56,7 +56,6 @@ class CrossoverFinder
 class TestCrossoverFinder 
 {
     public:
-
         static void run_tests() {
 
             std::vector<std::tuple<std::vector<int>, std::vector<int>, std::vector<int>>> test_cases = {
